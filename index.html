@@ -1,9 +1,243 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoding the Web</title>
+    <link rel="stylesheet" href="./Resources/CSS/index.css">
+</head>
 <body>
-  <h1>LIZZIE</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header>
+        <h1>Decoding the Web</h1>
+        <h2>Lizzie's Guide to Basic HTML</h2>
+        <h3>Key HTML Elements & Structure to Consider When Building Index.html</h3>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" class="column" id="col1">What It's Called</th>
+                    <th scope="col" class="column" id="col2">How It Looks</th>
+                    <th scope="col" class="column" id="col3">How It Works</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr id="row2">
+                    <td>Doctype / HTML Element</td>
+                    <td>Type “HTML:5” into VS for:<br>
+                        <br>
+                        &lt;!DOCTYPE html&gt;<br>
+                        html lang="en"&gt;<br>
+                        &lt;head><br>
+                        <span class="tab"></span>&lt;meta charset="UTF-8"&gt;<br>
+                        <span class="tab"></span>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br>
+                        <span class="tab"></span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                        <span class="tab"></span>&lt;title>Document</title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </td>
+                    <td>The &lt;html&gt; element, the root of an HTML document, should be added after the 
+                        &lt;!DOCTYPE&gt; declaration. All content/structure for an HTML document should be 
+                        contained between the opening and closing &lt;html&gt; tags.</td>
+                </tr>
+                
+                <tr id="row3">
+                    <td>Head Element</td>
+                    <td>&lt;head&gt;<br>
+                        <span class="tab"></span>&lt;title&gt;Document&lt;/title&gt;<br>
+                        <span class="tab"></span>&lt;link rel="stylesheet" href="./Resources/CSS/index.css"&gt;<br>
+                        &lt;/head&gt;
+                    </td>
+                    <td>The &lt;head&gt; element contains general information about an HTML page that isn't 
+                        displayed on the page itself. This information is called metadata and includes things 
+                        like the title of the HTML document and links to stylesheets.</td>
+                </tr>
+                
+                <tr id="row4">
+                    <td>Body Element</td>
+                    <td>&lt;body&gt;<br>
+                        <span class="tab"></span>&lt;header&gt;<br>
+                        <span class="tab"></span>&lt;/header&gt;<br>
+                        <span class="tab"></span>&lt;main&gt;<br>
+                        <span class="tab"></span>&lt;/main&gt;<br>
+                        <span class="tab"></span>&lt;footer&gt;<br>
+                        <span class="tab"></span>&lt;/footer&gt;<br>
+                        &lt;/body&gt;
+                    </td>
+                    <td>The &lt;body&gt; element represents the content of an HTML document. Content inside 
+                        &lt;body&gt; tags are rendered on the web browsers. Note: There can be only one &lt;body&gt;
+                        element in a document.</td>
+                </tr>
+
+                <tr id="row5">
+                    <td>Div Element</td>
+                    <td>&lt;div&gt;<br>
+                        <span class="tab"></span>&lt;h1&gt;A section of grouped elements&lt;/h1&gt;<br>
+                        <span class="tab"></span>&lt;p&gt;Here's some text for the section&lt;/p&gt;<br>
+                      &lt;/div&gt;<br>
+                      &lt;div&gt;<br>
+                      <span class="tab"></span>&lt;h1&gt;Second section of grouped elements&lt;/h1&gt;<br>
+                      <span class="tab"></span>&lt;p&gt;Here's some text&lt;/p&gt;<br>
+                      &lt;/div&gt;</td>
+                    <td>The &lt;div&gt; element is used as a container that divides an HTML document into sections 
+                        and is short for “division”. &lt;div&gt; elements can contain flow content such as headings, 
+                        paragraphs, links, images, etc.</td>
+                </tr>
+
+                <tr id="row6">
+                    <td>Heading Elements</td>
+                    <td>&lt;h1&gt;Breaking News&lt;/h1&gt;<br>
+                        &lt;h2&gt;This is the 1st subheading&lt;/h2&gt;<br>
+                        &lt;h3&gt;This is the 2nd subheading&lt;/h3&gt;<br>
+                        ...<br>
+                        &lt;h6&gt;This is the 5th subheading&lt;/h6&gt;</td>
+                    <td>HTML can use six different levels of heading elements. The heading elements are ordered 
+                        from the highest level &lt;h1&gt; to the lowest level &lt;h6&gt;.</td>
+                </tr>
+
+                <tr id="row7">
+                    <td>Attribute Name</td>
+                    <td>&lt;div name=“value"&gt;
+                        &lt;/div&gt;</td>
+                    <td>HTML attributes consist of a name and a value using the following syntax: name="value" and
+                         can be added to the opening tag of an HTML element to configure or change the behavior of 
+                         the element.</td>
+                </tr>
+
+                <tr id="row8">
+                    <td>Unique ID Attributes</td>
+                    <td>&lt;h1 id="A1"&gt;Hello World&lt;/h1&gt;</td>
+                    <td>In HTML, specific and unique id attributes can be assigned to different elements in order 
+                        to differentiate between them. When needed, the id value can be called upon by CSS and 
+                        JavaScript to manipulate, format, and perform specific instructions on that element and 
+                        that element only. Valid id attributes should begin with a letter and should only contain 
+                        letters (a-Z), digits (0-9), hyphens (-), underscores (_), and periods (.).</td>
+                </tr>
+
+                <tr id="row9">
+                    <td>Paragraph Elements</td>
+                    <td>&lt;p&gt;This is a block of text! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        &lt;/p&gt;</td>
+                    <td>The &lt;p&gt; paragraph element contains and displays a block of text.</td>
+                </tr>
+
+                <tr id="row10">
+                    <td>Line Break Element</td>
+                    <td>A line break haiku.&lt;br&gt;<br>
+                        Poems are a great use case.&lt;br&gt;<br>
+                        Oh joy! A line break.</td>
+                    <td>The &lt;br&gt; line break element will create a line break in text and is especially useful 
+                        where a division of text is required, like in a postal address. The line break element 
+                        requires only an opening tag and must not have a closing tag.</td>
+                </tr>
+
+                <tr id="row11">
+                    <td>List Item Elements</td>
+                    <td>&lt;ol&gt;<br>
+                        <span class="tab"></span> &lt;li&gt;Head east on Prince St&lt;/li&gt;<br>
+                        <span class="tab"></span> &lt;li&gt;Turn left on Elizabeth&lt;/li&gt;<br>
+                      &lt;/ol&gt;<br>
+                      <br>
+                      &lt;ul&gt;<br>
+                        <span class="tab"></span>&lt;li&gt;Cookies&lt;/li&gt;<br>
+                        <span class="tab"></span> &lt;li&gt;Milk&lt;/li&gt;<br>
+                      &lt;/ul&gt;</td>
+                    <td>The &lt;li&gt; list item element create list items inside:<br>
+                        <ul>
+                            <li>Ordered (numbered) lists &lt;ol&gt;</li>
+                            <li>Unordered (dotted) lists &lt;ul&gt;</td>
+                            </ul></tr></td>
+                </tr>
+
+                <tr id="row12">
+                    <td>Table Elements</td>
+                    <td>&lt;table&gt;<br>
+                        <span class="tab"></span>&lt;thead&gt;<br>
+                        <span class="tab"></span><span class="tab"></span>&lt;tr&gt;<br>
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;th&gt;heading 1&lt;/th&gt;<br>
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;th&gt;heading 2&lt;/th&gt;<br>
+                        <span class="tab"></span><span class="tab"></span>&lt;/tr&gt;<br>
+                        <span class="tab"></span>&lt;/thead&gt;<br>
+                        <span class="tab"></span>&lt;tbody&gt;<br>
+                        <span class="tab"></span><span class="tab"></span>&lt;tr&gt;<br>
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;td&gt;col 1&lt;/td&gt;<br>
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;td&gt;col 2&lt;/td&gt;<br>
+                        <span class="tab"></span><span class="tab"></span>&lt;/tr&gt;<br>
+                          <span class="tab"></span>&lt;/tbody&gt;<br>
+                       &lt;/table&gt;</td>
+                    <td>&lt;table&gt; Table: The wrapper element for all HTML tables.<br><br>
+                        &lt;thead&gt; Table Head: The set of rows defining the column headers in a table.<br><br>
+                        &lt;tbody&gt; Table Body: The set of rows containing actual table data.<br><br>
+                        &lt;tr&gt;Table Row: The table row container. <br><br>
+                        &lt;td&gt; Table Data: The table row container.<br><br>
+                        &lt;tfoot&gt; Table Foot: The set of rows defining the footer in a table.</td>
+                </tr>
+
+                <tr id="row13">
+                    <td>Image Element</td>
+                    <td>&lt;img src=“pathname.png” alt="text describing image" /&gt;</td>
+                    <td>HTML image &lt;img&gt; elements embed images in documents. The src attribute contains the image URL and is 
+                        mandatory. &lt;img&gt; is an empty element meaning it should not have a closing tag.</td>
+                </tr>
+
+                <tr id="row14">
+                    <td>Video Element</td>
+                    <td>&lt;video src="test-video.mp4" controls&gt; Video not supported&lt;/video&gt;</td>
+                    <td>The &lt;video&gt; element embeds a media player for video playback. The src attribute will contain the URL 
+                        to the video. Adding the controls attribute will display video controls in the media player. Note: The content 
+                        inside the opening and closing tag is shown as a fallback in browsers that don't support the element.</td>
+                </tr>
+
+                <tr id="row15">
+                    <td>Anchor Element</td>
+                    <td>&lt;!-- Creating text links --&gt;&lt;a href="http://www.codecademy.com"&gt;Visit this site&lt;/a&gt;<br><br>
+                        &lt;!-- Creating image links --&gt;&lt;a href="http://www.codecademy.com"&gt;&lt;img src="logo.jpg"
+                        &gt;Click this image&lt;/a&gt;</td>
+                    <td>The &lt;a&gt; anchor element is used to create hyperlinks in an HTML document. The hyperlinks can point to 
+                        other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink 
+                        reference attribute, href. The href determines the location the anchor element points to.</td>
+                </tr>
+
+                <tr id="row16">
+                    <td>Target Element</td>
+                    <td>&lt;a href="https://www.google.com" target="_blank"&gt;This anchor element links to google and will open 
+                        in a new tab or window.&lt;/a&gt;</td>
+                    <td>The target attribute on an &lt;a&gt; anchor element specifies where a hyperlink should be opened. A target 
+                        value of "_blank" will tell the browser to open the hyperlink in a new tab in modern browsers, or in a new 
+                        window in older browsers or if the browser has had settings changed to open hyperlinks in a new window.</td>
+                </tr>
+
+                <tr id="row17">
+                    <td>Link to a Different Part of the Page</td>
+                    <td>&lt;div&gt;<br>
+                        <span class="tab"></span>&lt;p id="id-of-element-to-link-to"&gt;A different part of the page!&lt;/p&gt;<br>
+                        &lt;/div&gt; <br><br>
+                      &lt;a href="#id-of-element-to-link-to"&gt;Take me to a different part of the page&lt;/a&gt;</td>
+                    <td>The anchor element &lt;a&gt; can create hyperlinks to different parts of the same HTML document using the href 
+                        attribute to point to the desired location with # followed by the id of the element to link to.</td>
+                </tr>
+
+                <tr id="row18">
+                    <td>Comments</td>
+                    <td>&lt;!-- Main site content --&gt;<br>
+                        &lt;div&gt;<br>
+                        <span class="tab"></span>Content<br>
+                        &lt;/div&gt;<br><br>
+                        &lt;!-- Comments can be multiple lines long.--&gt;</td>
+                    <td>In HTML, comments can be added between an opening &lt;!-- and closing --&gt;. Content inside of comments 
+                        will not be rendered by browsers, and are usually used to describe a part of code or provide other details.
+                        Comments can span single or multiple lines.</td>
+                </tr>
+
+              </tbody>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
 </body>
- 
 </html>

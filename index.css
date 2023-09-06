@@ -1,0 +1,72 @@
+header {
+    text-align: left;
+    display: block;
+    width: 1156px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-image: url("/Users/lizziemurch/Code/Codecademy/Projects/CheatSheet/Resources/CSS/Images/hacker-4031973_1920.jpg") ;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-family: Arial, sans-serif;
+    text-align: left;
+  }
+
+th {
+    padding: 10px;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}  
+
+.column {
+    padding: 0px;
+}
+  
+#col1 {
+    width: 200px;
+    font-size: 18px;
+    background-color:#639d61;
+    color: white;
+}
+
+#col2 {
+    width: 600px;
+    font-size: 18px;
+    background-color: #639d61;
+    color: white;
+}
+
+#col3 {
+    width: 350px;
+    font-size: 18px;
+    background-color: #639d61;
+    color: white;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
